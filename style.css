@@ -663,6 +663,7 @@ span{
   html {
     font-size: 50%;
   }
+}
 
   nav {
     flex-direction: column;
@@ -685,7 +686,7 @@ span{
 
   .timeline-dot {
     left: 15px; 
-
+  }
   .timeline-content {
     margin-left: 20px; 
   }
@@ -734,5 +735,10 @@ span{
   border-radius: 10px;
 }
 
-}
+
+
+
+
+   
+
 
