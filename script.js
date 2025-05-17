@@ -26,3 +26,39 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
+ document.querySelectorAll('.service-box').forEach(box => {
+    box.addEventListener('touchstart', () => {
+      // Collapse all others
+      document.querySelectorAll('.service-box').forEach(b => {
+        if (b !== box) b.classList.remove('expanded');
+      });
+
+      // Toggle this one
+      box.classList.toggle('expanded');
+    });
+    
+    // Also allow click for desktop testing
+    box.addEventListener('click', () => {
+      document.querySelectorAll('.service-box').forEach(b => {
+        if (b !== box) b.classList.remove('expanded');
+      });
+      box.classList.toggle('expanded');
+    });
+  });
+
+  const serviceBoxes = document.querySelectorAll(".service-box");
+
+serviceBoxes.forEach((box) => {
+  box.addEventListener("click", () => {
+    // Optional: close others
+    serviceBoxes.forEach((b) => {
+      if (b !== box) b.classList.remove("active");
+    });
+
+    // Toggle current
+    box.classList.toggle("active");
+  });
+});
+
+
+  
