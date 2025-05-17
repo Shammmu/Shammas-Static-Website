@@ -632,5 +632,88 @@ font-size: 1rem;
 color: #aaa;
 padding-left: 500px;
 
-}  this th css of the html
+}  
+
+/* Responsive Styles Only */
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-content h1 {
+    font-size: 5rem;
+  }
+
+  .home-img img {
+    width: 60%;
+  }
+
+  .author {
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid var(--main-color);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+  }
+
+  .footer .social a {
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .quote {
+    font-size: 1.6rem;
+    margin: 3rem 2rem;
+  }
+
+  .author {
+    font-size: 1rem;
+    padding-right: 2rem;
+  }
+}
+
+
+
 
