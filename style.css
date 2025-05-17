@@ -734,6 +734,35 @@ span{
   padding: 20px;
   border-radius: 10px;
 }
+@media (min-width: 1025px) {
+  .timeline-items {
+    position: relative;
+    padding: 50px 0;
+  }
+
+  .timeline-items::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: 1;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    z-index: 2;
+  }
+}
 
 
 
