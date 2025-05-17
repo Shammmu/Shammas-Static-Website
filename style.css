@@ -734,6 +734,10 @@ span{
   padding: 20px;
   border-radius: 10px;
 }
+
+
+
+   
 @media (min-width: 1025px) {
   .timeline-items {
     position: relative;
@@ -763,11 +767,3 @@ span{
     z-index: 2;
   }
 }
-
-
-
-
-
-   
-
-
